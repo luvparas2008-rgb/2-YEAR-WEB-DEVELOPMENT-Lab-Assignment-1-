@@ -1,5 +1,4 @@
-// moduleDemo.js
-// Demonstrates reusability of custom modules using require()
+
 
 const { isEven, isOdd } = require("./modules/isEven");
 const logger = require("./modules/logger");
