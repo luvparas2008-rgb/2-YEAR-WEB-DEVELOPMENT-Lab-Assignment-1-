@@ -1,5 +1,4 @@
-// server.js
-// Basic HTTP server using the built-in http module
+
 
 const http = require("http");
 const logger = require("./modules/logger");
@@ -9,7 +8,7 @@ const PORT = 3000;
 const server = http.createServer((req, res) => {
   logger.log(`Incoming request -> Method: ${req.method}, URL: ${req.url}`);
 
-  // Set default header
+
   res.setHeader("Content-Type", "text/plain");
 
   if (req.url === "/") {
